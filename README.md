@@ -1,1 +1,4 @@
-# auxiliAI
+# AuxiliAI
+### Projeto para auxiliar na diagnostico de doenças com base em sintomas.
+
+O objetivo do sistema é oferecer um banco de dados de sintomas, no qual, com base nas informações fornecidas pelo usuário, ele sugerirá a condição de saúde mais provável. Para cada sintoma selecionado, o sistema apresentará uma pergunta específica, que deverá ser respondida pelo usuário a fim de refinar a análise e identificar a causa com maior precisão. Ao final do processo, o sistema fornecerá informações detalhadas sobre o tratamento recomendado e gerará um relatório em formato PDF contendo todas as informações relevantes. Esse relatório poderá ser apresentado ao profissional da saúde, que validará o diagnóstico final.
