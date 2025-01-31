@@ -1,0 +1,94 @@
+{
+  "patientProfile": {
+    "age": 35,
+    "gender": "feminino",
+    "riskFactors": [
+      "histórico familiar de enxaqueca",
+      "estresse ocupacional"
+    ]
+  },
+  "symptoms": [
+    {
+      "symptomTag": "headache",
+      "symptomName": "Dor de Cabeça",
+      "details": {
+        "duration": "mais de 3 dias",
+        "intensity": "moderada a alta",
+        "associatedSymptoms": [
+          "sensibilidade à luz",
+          "tensão muscular"
+        ]
+      }
+    }
+  ],
+  "diagnosticAnalysis": {
+    "primaryDiagnosis": {
+      "condition": "Enxaqueca Crônica",
+      "icd10Code": "G43.1",
+      "confidence": 85,
+      "description": "Condição neurológica caracterizada por dores de cabeça recorrentes e intensas, frequentemente acompanhadas de sintomas neurológicos."
+    },
+    "secondaryDiagnoses": [
+      {
+        "condition": "Síndrome de Tensão Muscular",
+        "confidence": 65,
+        "description": "Tensão muscular prolongada associada a estresse e má postura."
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "title": "Consulta Especializada",
+      "description": "Agendar consulta com neurologista para avaliação detalhada e possível tratamento preventivo.",
+      "priority": "alta",
+      "category": "medical_advice"
+    },
+    {
+      "title": "Meditação Diária",
+      "description": "Praticar técnicas de relaxamento por pelo menos 20 minutos diários.",
+      "priority": "média", 
+      "category": "lifestyle"
+    },
+    {
+      "title": "Higiene do Sono",
+      "description": "Manter horários regulares de sono, criar ambiente escuro e silencioso.",
+      "priority": "alta",
+      "category": "lifestyle"
+    },
+    {
+      "title": "Dieta Balanceada",
+      "description": "Aumentar consumo de alimentos anti-inflamatórios, reduzir processados.",
+      "priority": "média",
+      "category": "nutrition"
+    },
+    {
+      "title": "Exercícios de Alongamento",
+      "description": "Realizar alongamentos diários para redução de tensão muscular.",
+      "priority": "baixa",
+      "category": "physical_health"
+    }
+  ],
+  "warningSignals": [
+    {
+      "signal": "Dor de cabeça súbita e intensa",
+      "actionRequired": "Buscar atendimento médico imediato"
+    },
+    {
+      "signal": "Rigidez de nuca ou febre acompanhando a dor",
+      "actionRequired": "Realizar avaliação médica urgente"
+    }
+  ],
+  "followUpPlan": {
+    "nextSteps": [
+      "Manter diário de dores",
+      "Realizar exames complementares",
+      "Retorno médico em 60 dias"
+    ],
+    "estimatedTreatmentDuration": "3-6 meses"
+  },
+  "metadata": {
+    "reportGeneratedAt": "2025-01-30T11:40:00-03:00",
+    "reportVersion": "1.0.0",
+    "aiModelVersion": "2.1.5"
+  }
+}

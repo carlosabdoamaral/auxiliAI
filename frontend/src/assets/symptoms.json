@@ -1,0 +1,1408 @@
+{
+  "symptoms": [
+    {
+      "id": 1,
+      "tag": "headache",
+      "name": "Dor de cabeça",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está sentindo dor de cabeça?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A dor é constante ou intermitente?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Intermitente" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Em qual região da cabeça sente mais dor?",
+          "options": [
+            { "id": 1, "text": "Frente" },
+            { "id": 2, "text": "Laterais" },
+            { "id": 3, "text": "Atrás" },
+            { "id": 4, "text": "Topo" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "A dor piora com luz ou barulho?",
+          "options": [
+            { "id": 1, "text": "Luz" },
+            { "id": 2, "text": "Barulho" },
+            { "id": 3, "text": "Ambos" },
+            { "id": 4, "text": "Nenhum" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "tag": "fever",
+      "name": "Febre",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Qual a temperatura mais alta registrada?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "Há quanto tempo está com febre?",
+          "options": []
+        },
+        {
+          "id": 3,
+          "text": "A febre é constante ou vai e volta?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Vai e volta" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Tomou algum medicamento para baixar a febre?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "tag": "mood_changes",
+      "name": "Alterações de humor",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Como são essas alterações de humor?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "Com que frequência ocorrem?",
+          "options": []
+        },
+        {
+          "id": 3,
+          "text": "Identifica algum gatilho?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Isso afeta suas relações pessoais?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "tag": "circulation_problems",
+      "name": "Problemas circulatórios",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Que sintomas circulatórios apresenta?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "Tem varizes ou inchaço nas pernas?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Sente formigamento?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Pratica atividade física regularmente?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "tag": "fatigue",
+      "name": "Fadiga",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está se sentindo cansado(a)?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A fadiga é constante ou varia ao longo do dia?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Varia" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Você está dormindo bem?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Está enfrentando dificuldades para se concentrar?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "tag": "cough",
+      "name": "Tosse",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com tosse?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A tosse é seca ou produtiva?",
+          "options": [
+            { "id": 1, "text": "Seca" },
+            { "id": 2, "text": "Produtiva" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A tosse é pior em algum período do dia?",
+          "options": [
+            { "id": 1, "text": "Manhã" },
+            { "id": 2, "text": "Tarde" },
+            { "id": 3, "text": "Noite" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Há presença de sangue na tosse?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "tag": "nausea",
+      "name": "Náusea",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está sentindo náusea?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A náusea é constante ou intermitente?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Intermitente" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Já vomitou devido à náusea?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Há algum fator que desencadeia a náusea?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "tag": "chest_pain",
+      "name": "Dor no peito",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está sentindo dor no peito?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A dor é constante ou intermitente?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Intermitente" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A dor piora com esforço físico?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "A dor irradia para algum outro local?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "tag": "dizziness",
+      "name": "Tontura",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está sentindo tontura?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A tontura ocorre em alguma situação específica?",
+          "options": [
+            { "id": 1, "text": "Ao levantar" },
+            { "id": 2, "text": "Ao deitar" },
+            { "id": 3, "text": "Durante o dia" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A tontura é acompanhada de náusea?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já desmaiou devido à tontura?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "tag": "shortness_of_breath",
+      "name": "Falta de ar",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está sentindo falta de ar?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A falta de ar ocorre em repouso ou durante atividades?",
+          "options": [
+            { "id": 1, "text": "Em repouso" },
+            { "id": 2, "text": "Durante atividades" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A falta de ar piora à noite?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Usa algum medicamento para aliviar a falta de ar?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "tag": "itchiness",
+      "name": "Coceira",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está sentindo coceira?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A coceira está localizada em algum lugar específico?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A coceira piora em algum momento do dia?",
+          "options": [
+            { "id": 1, "text": "Manhã" },
+            { "id": 2, "text": "Tarde" },
+            { "id": 3, "text": "Noite" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já usou algum creme ou medicamento para aliviar a coceira?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "tag": "diarrhea",
+      "name": "Diarréia",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com diarréia?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A diarréia é constante ou intermitente?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Intermitente" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Tem sangue nas fezes?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Está tomando algum medicamento para tratar a diarréia?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "tag": "back_pain",
+      "name": "Dor nas costas",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com dor nas costas?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A dor nas costas é constante ou varia ao longo do dia?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Varia" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A dor piora com alguma atividade específica?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Está tomando algum medicamento ou fazendo fisioterapia para aliviar a dor?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "tag": "sore_throat",
+      "name": "Dor de garganta",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com dor de garganta?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A dor de garganta piora ao engolir?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A dor de garganta é acompanhada de febre?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Está tomando algum medicamento para aliviar a dor de garganta?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "tag": "skin_rash",
+      "name": "Erupção cutânea",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com erupção cutânea?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A erupção cutânea coça?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A erupção cutânea é acompanhada de febre?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já usou algum creme ou medicamento para tratar a erupção cutânea?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "tag": "joint_pain",
+      "name": "Dor nas articulações",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com dor nas articulações?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A dor nas articulações é constante ou intermitente?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Intermitente" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Quais articulações são afetadas?",
+          "options": []
+        },
+        {
+          "id": 4,
+          "text": "A dor piora com movimento?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "tag": "abdominal_pain",
+      "name": "Dor abdominal",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com dor abdominal?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A dor é localizada em alguma região específica do abdômen?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A dor é constante ou varia ao longo do dia?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Varia" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "A dor é acompanhada de náusea ou vômito?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "tag": "cold_sweats",
+      "name": "Suores frios",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está tendo suores frios?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "Os suores frios ocorrem em algum momento específico do dia?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Os suores frios são acompanhados de outros sintomas?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já conversou com um médico sobre os suores frios?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "tag": "loss_of_appetite",
+      "name": "Perda de apetite",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com perda de apetite?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A perda de apetite está acompanhada de perda de peso?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A perda de apetite é constante ou varia?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Varia" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já procurou ajuda médica para a perda de apetite?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "tag": "insomnia",
+      "name": "Insônia",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com insônia?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A insônia ocorre todas as noites?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A insônia está afetando suas atividades diárias?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já tentou algum tratamento para a insônia?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "tag": "muscle_pain",
+      "name": "Dor muscular",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com dor muscular?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A dor muscular é constante ou varia?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Varia" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Quais músculos são afetados?",
+          "options": []
+        },
+        {
+          "id": 4,
+          "text": "Já usou algum medicamento ou fez fisioterapia para a dor muscular?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "tag": "congestion",
+      "name": "Congestão nasal",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com congestão nasal?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A congestão nasal piora à noite?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Já usou algum descongestionante nasal?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "A congestão nasal é acompanhada de outros sintomas?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "tag": "loss_of_taste_smell",
+      "name": "Perda de paladar ou olfato",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com perda de paladar ou olfato?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "Perdeu o paladar, o olfato, ou ambos?",
+          "options": [
+            { "id": 1, "text": "Paladar" },
+            { "id": 2, "text": "Olfato" },
+            { "id": 3, "text": "Ambos" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A perda de paladar ou olfato foi súbita ou gradual?",
+          "options": [
+            { "id": 1, "text": "Súbita" },
+            { "id": 2, "text": "Gradual" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já recuperou algum dos sentidos?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "tag": "numbness",
+      "name": "Dormência",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está sentindo dormência?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A dormência está localizada em alguma parte específica do corpo?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A dormência vem acompanhada de outros sintomas?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já procurou ajuda médica para a dormência?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "tag": "blurred_vision",
+      "name": "Visão embaçada",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com visão embaçada?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A visão embaçada ocorre em um ou ambos os olhos?",
+          "options": [
+            { "id": 1, "text": "Um olho" },
+            { "id": 2, "text": "Ambos os olhos" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A visão embaçada é constante ou varia?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Varia" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "A visão embaçada é acompanhada de dor nos olhos?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "tag": "swollen_lymph_nodes",
+      "name": "Gânglios linfáticos inchados",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com gânglios linfáticos inchados?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "Os gânglios linfáticos inchados estão localizados em alguma parte específica do corpo?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Os gânglios linfáticos inchados são dolorosos?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Os gânglios linfáticos inchados são acompanhados de febre?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "tag": "palpitations",
+      "name": "Palpitações",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com palpitações?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "As palpitações ocorrem em repouso ou durante atividades?",
+          "options": [
+            { "id": 1, "text": "Em repouso" },
+            { "id": 2, "text": "Durante atividades" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "As palpitações são acompanhadas de outros sintomas?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já procurou ajuda médica para as palpitações?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "tag": "frequent_urination",
+      "name": "Urinar frequente",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está urinando com frequência?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A urina frequente é acompanhada de dor?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A quantidade de urina é maior ou menor do que o normal?",
+          "options": [
+            { "id": 1, "text": "Maior" },
+            { "id": 2, "text": "Menor" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já procurou ajuda médica para a urina frequente?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "tag": "blood_in_stool",
+      "name": "Sangue nas fezes",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está notando sangue nas fezes?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "O sangue nas fezes é acompanhado de dor abdominal?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A quantidade de sangue é pequena ou grande?",
+          "options": [
+            { "id": 1, "text": "Pequena" },
+            { "id": 2, "text": "Grande" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já procurou ajuda médica para o sangue nas fezes?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "tag": "tingling",
+      "name": "Formigamento",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está sentindo formigamento?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "O formigamento está localizado em alguma parte específica do corpo?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "O formigamento vem acompanhado de outros sintomas?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já procurou ajuda médica para o formigamento?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "tag": "frequent_headaches",
+      "name": "Dores de cabeça frequentes",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está tendo dores de cabeça frequentes?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "As dores de cabeça são acompanhadas de outros sintomas?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Há algo que parece desencadear as dores de cabeça?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já procurou ajuda médica para as dores de cabeça frequentes?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "tag": "constipation",
+      "name": "Constipação",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com constipação?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A constipação é constante ou intermitente?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Intermitente" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A constipação é acompanhada de dor abdominal?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já usou algum medicamento ou remédio caseiro para tratar a constipação?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "tag": "night_sweats",
+      "name": "Suores noturnos",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está tendo suores noturnos?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "Os suores noturnos são acompanhados de outros sintomas?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Os suores noturnos ocorrem todas as noites?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já procurou ajuda médica para os suores noturnos?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "tag": "chills",
+      "name": "Calafrios",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está tendo calafrios?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "Os calafrios são acompanhados de febre?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Os calafrios ocorrem em algum momento específico do dia?",
+          "options": [
+            { "id": 1, "text": "Manhã" },
+            { "id": 2, "text": "Tarde" },
+            { "id": 3, "text": "Noite" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já procurou ajuda médica para os calafrios?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "tag": "fatigue",
+      "name": "Fadiga",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está se sentindo cansado(a)?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A fadiga é constante ou varia ao longo do dia?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Varia" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Você está dormindo bem?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Está enfrentando dificuldades para se concentrar?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "tag": "hoarseness",
+      "name": "Rouquidão",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está com rouquidão?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A rouquidão está acompanhada de dor de garganta?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A rouquidão piora em algum momento específico do dia?",
+          "options": [
+            { "id": 1, "text": "Manhã" },
+            { "id": 2, "text": "Tarde" },
+            { "id": 3, "text": "Noite" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já procurou ajuda médica para a rouquidão?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "tag": "nausea",
+      "name": "Náusea",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está sentindo náusea?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A náusea é constante ou intermitente?",
+          "options": [
+            { "id": 1, "text": "Constante" },
+            { "id": 2, "text": "Intermitente" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Já vomitou devido à náusea?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Há algum fator que desencadeia a náusea?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "tag": "dizziness",
+      "name": "Tontura",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está sentindo tontura?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A tontura ocorre em alguma situação específica?",
+          "options": [
+            { "id": 1, "text": "Ao levantar" },
+            { "id": 2, "text": "Ao deitar" },
+            { "id": 3, "text": "Durante o dia" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A tontura é acompanhada de náusea?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já desmaiou devido à tontura?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "tag": "loss_of_balance",
+      "name": "Perda de equilíbrio",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Há quanto tempo está sentindo perda de equilíbrio?",
+          "options": []
+        },
+        {
+          "id": 2,
+          "text": "A perda de equilíbrio ocorre em alguma situação específica?",
+          "options": [
+            { "id": 1, "text": "Ao caminhar" },
+            { "id": 2, "text": "Ao ficar em pé" },
+            { "id": 3, "text": "Em outras situações" }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "A perda de equilíbrio é acompanhada de outros sintomas?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Já procurou ajuda médica para a perda de equilíbrio?",
+          "options": [
+            { "id": 1, "text": "Sim" },
+            { "id": 2, "text": "Não" }
+          ]
+        }
+      ]
+    }
+  ]
+}

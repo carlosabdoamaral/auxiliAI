@@ -1,103 +1,50 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
+import { useSymptomsStore } from '../stores/symptoms'
+import symptomsData from '../assets/symptoms.json'
 
-const symptoms = ref([
-  "Dor de cabeça",
-  "Febre",
-  "Tosse",
-  "Fadiga",
-  "Dor muscular",
-  "Náusea",
-  "Dor de garganta",
-  "Falta de ar",
-  "Dor no peito",
-  "Diarreia",
-  "Tontura",
-  "Calafrios",
-  "Suor noturno",
-  "Perda de apetite",
-  "Dificuldade para dormir",
-  "Dor nas articulações",
-  "Inchaço nas pernas",
-  "Coceira na pele",
-  "Erupção cutânea",
-  "Dor abdominal",
-  "Vômito",
-  "Sangue na urina",
-  "Dificuldade para engolir",
-  "Visão turva",
-  "Zumbido nos ouvidos",
-  "Sensibilidade à luz",
-  "Confusão mental",
-  "Perda de peso inexplicável",
-  "Dormência ou formigamento",
-  "Palpitações cardíacas",
-  "Dor nas costas",
-  "Sangue nas fezes",
-  "Gengivas inchadas",
-  "Mau hálito persistente",
-  "Queda de cabelo",
-  "Unhas quebradiças",
-  "Olhos secos",
-  "Nariz entupido",
-  "Espirros frequentes",
-  "Sinusite",
-  "Dor de ouvido",
-  "Rouquidão",
-  "Dificuldade para concentrar",
-  "Irritabilidade",
-  "Ansiedade",
-  "Depressão",
-  "Aumento da sede",
-  "Micção frequente",
-  "Incontinência urinária",
-  "Dor ao urinar",
-  "Inchaço abdominal",
-  "Gases excessivos",
-  "Azia",
-  "Refluxo gastroesofágico",
-  "Sangramento nasal",
-  "Feridas que não cicatrizam",
-  "Manchas na pele",
-  "Sensação de queimação na pele",
-  "Dores menstruais intensas",
-  "Sangramento menstrual irregular",
-  "Secreção vaginal anormal",
-  "Dor durante a relação sexual",
-  "Disfunção erétil",
-  "Redução da libido",
-  "Suores frios",
-  "Sensação de desmaio",
-  "Convulsões",
-  "Tremores",
-  "Rigidez muscular",
-  "Dificuldade para mover membros",
-  "Perda de memória",
-  "Alucinações",
-  "Delírios",
-  "Comportamento compulsivo",
-  "Dificuldade para falar",
-  "Dificuldade para entender palavras",
-  "Perda de equilíbrio",
-  "Inchaço nos olhos",
-  "Olhos vermelhos",
-  "Sensação de pressão nos olhos",
-  "Dor nos dentes",
-  "Sensibilidade dentária",
-  "Má cicatrização de feridas",
-  "Cãibras musculares",
-  "Pele seca",
-  "Pele amarelada",
-  "Unhas azuladas",
-  "Lábios rachados",
-  "Língua inchada",
-  "Sabor metálico na boca",
-  "Perda do paladar",
-  "Perda do olfato",
-]);
+const router = useRouter()
+const symptomsStore = useSymptomsStore()
+const selectedSymptoms = ref([])
+const searchQuery = ref("")
+const filteredSymptoms = ref([])
 
-const selectedSymptoms = ref([]);
-const searchQuery = ref("");
+onMounted(() => {
+  filteredSymptoms.value = symptomsData.symptoms
+})
+
+function toggleSymptom(symptom) {
+  const index = selectedSymptoms.value.findIndex(s => s.id === symptom.id)
+  if (index === -1) {
+    selectedSymptoms.value.push(symptom)
+  } else {
+    selectedSymptoms.value.splice(index, 1)
+  }
+}
+
+function clearSelection() {
+  selectedSymptoms.value = []
+}
+
+function startQuestionaire() {
+  if (selectedSymptoms.value.length === 0) {
+    alert("Por favor, selecione pelo menos um sintoma")
+    return
+  }
+  symptomsStore.setSelectedSymptoms(selectedSymptoms.value)
+  router.push('/questionaire')
+}
+
+function updateFilteredSymptoms() {
+  if (searchQuery.value) {
+    filteredSymptoms.value = symptomsData.symptoms.filter((symptom) =>
+      symptom.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+    )
+  } else {
+    filteredSymptoms.value = symptomsData.symptoms
+  }
+}
 </script>
 
 <template>
@@ -108,29 +55,29 @@ const searchQuery = ref("");
     </section>
 
     <section id="search-section">
-      <a-input-search
-        v-model:value="searchQuery"
-        placeholder="Buscar sintomas..."
-      />
+      <a-input v-model:value="searchQuery" placeholder="Buscar sintomas..." @change="updateFilteredSymptoms" />
     </section>
 
     <section id="symptoms-section">
-
       <div class="symptoms-chips">
-        <a-checkbox-group v-model:value="selectedSymptoms">
-          <a-checkbox
-            v-for="symptom in symptoms"
-            :key="symptom"
-            :value="symptom"
+        <div v-for="symptom in filteredSymptoms" :key="symptom.id">
+          <a-checkbox 
+            :checked="selectedSymptoms.includes(symptom)" 
+            @change="toggleSymptom(symptom)"
           >
-            {{ symptom }}
+            {{ symptom.name }}
           </a-checkbox>
-        </a-checkbox-group>
+        </div>
       </div>
     </section>
 
     <div id="action-section">
-      <a-button type="primary" size="large"> Avançar </a-button>
+      <a-button type="default" size="large" @click="clearSelection">
+        Limpar
+      </a-button>
+      <a-button type="primary" size="large" @click="startQuestionaire">
+        Avançar
+      </a-button>
     </div>
   </div>
 </template>
@@ -149,6 +96,7 @@ $debugBorder: 0px solid red;
   gap: 24px;
   height: 100%;
   max-height: 100dvh;
+  padding: 0 16px;
 
   #title-section {
     text-align: center;
@@ -158,13 +106,23 @@ $debugBorder: 0px solid red;
 
     .subtitle {
       color: grey;
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 500;
     }
 
     .title {
-      font-size: 40px;
+      font-size: 30px;
       font-weight: 500;
+    }
+  }
+
+  #search-section {
+    width: 100%;
+    max-width: 500px;
+
+    :deep(.ant-input) {
+      border-radius: 9999px;
+      height: 48px;
     }
   }
 
@@ -201,26 +159,18 @@ $debugBorder: 0px solid red;
       }
     }
 
-    /* Estilização da scrollbar para Firefox */
     scrollbar-width: thin;
     scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
 
     .symptoms-chips {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
       align-items: center;
+      justify-content: center;
       width: 100%;
       padding: 0 16px;
-
-      :deep(.ant-checkbox-group) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px 12px;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 800px;
-      }
+      gap: 16px;
 
       :deep(.ant-checkbox-wrapper) {
         background: transparent;
@@ -253,41 +203,64 @@ $debugBorder: 0px solid red;
     }
   }
 
-  #search-section {
-    width: 33dvw;
-
-    :deep(.ant-input) {
-      border-radius: 100em 0 0 100em;
-      height: 48px;
-      padding-left: 20px;
-    }
-
-    :deep(.ant-input-group-addon .ant-input-search-button) {
-      border-radius: 0 100em 100em 0;
-      height: 48px;
-      width: 48px;
-    }
-  }
-
   #action-section {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    gap: 16px;
     width: 100%;
-    height: $titleSectionHeight;
-    border: $debugBorder;
+    max-width: 500px;
 
     :deep(.ant-btn) {
-      background: #001529;
       border: none;
       height: 48px;
       padding: 0 48px;
       font-size: 16px;
       border-radius: 24px;
       min-width: 200px !important;
+      transition: all 0.3s ease;
+    }
+
+    :deep(.ant-btn-default) {
+      background: #f0f0f0;
+      color: rgba(0, 0, 0, 0.85);
 
       &:hover {
-        background-color: #002140;
+        background: #e6e6e6;
+      }
+    }
+
+    :deep(.ant-btn-primary) {
+      background: #1890ff;
+
+      &:hover {
+        background: #40a9ff;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 16px;
+
+    #title-section {
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .title {
+        font-size: 24px;
+      }
+    }
+
+    #symptoms-section {
+      height: auto;
+      max-height: 50dvh;
+    }
+
+    #action-section {
+      flex-direction: column;
+
+      :deep(.ant-btn) {
+        min-width: 100% !important;
       }
     }
   }
